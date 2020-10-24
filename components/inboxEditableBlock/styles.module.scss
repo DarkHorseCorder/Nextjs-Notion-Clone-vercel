@@ -1,0 +1,118 @@
+@import "../../shared/variables.scss";
+
+.articleTitle {
+  padding-top: 1rem;
+  // Better support for safari
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.articleURL {
+  padding: 0.25rem;
+  margin: 0.3em;
+  // Better support for safari
+  -webkit-user-select: text;
+  user-select: text;
+  font-size: small;
+}
+
+.block {
+  padding: 0.25rem;
+  // Better support for safari
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.block:focus,
+.isDragging,
+.blockSelected {
+  background: $tertiary;
+  outline-color: $tertiary;
+  & ~ .dragHandle {
+    opacity: 1;
+  }
+  & ~ .plusHandle {
+    opacity: 1;
+  }
+}
+
+.placeholder {
+  color: rgba(72, 72, 72, 0.25);
+}
+
+.draggable .block {
+  display: inline-block;
+  width: calc(100% - 4em);
+  margin: 0.3rem;
+}
+
+.draggable:hover {
+  .block {
+    background: #fafafa;
+    outline-color: $tertiary;
+  }
+  .dragHandle {
+    opacity: 1;
+  }
+  .plusHandle {
+    opacity: 1;
+  }
+}
+
+.divider {
+  opacity: 100%;
+  // margin-top: 10rem;
+  padding: 0.1rem;
+}
+
+.dragHandle {
+  opacity: 0;
+  display: inline-block;
+  width: 1.5rem;
+  img {
+    display: block;
+    margin: auto;
+  }
+  padding-bottom: 0.2em;
+  padding-left: 0.2em;
+}
+
+.plusHandle {
+  opacity: 0;
+  display: inline-block;
+  width: 1.5rem;
+  img {
+    display: block;
+    margin: auto;
+  }
+  padding-top: 0.2em;
+}
+
+
+.image {
+  display: inline-block;
+  width: calc(100% - 400rem);
+  padding: 0.25rem;
+  img {
+    display: block;
+    max-height: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.blockSelected.image {
+  opacity: 0.75;
+}
+
+.fileInputLabel {
+  display: block;
+  padding: 0.5rem 0.25rem;
+  color: #888888;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.userDisable{
+  pointer-events: none;
+}

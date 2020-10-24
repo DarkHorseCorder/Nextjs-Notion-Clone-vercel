@@ -1,0 +1,43 @@
+@import "../../shared/variables.scss";
+
+.headerBar {
+  width: calc(100% - 2rem);
+  max-width: $max-width;
+  padding: 1rem;
+  margin: 1rem;
+  background: $secondary;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+
+.logo {
+  font-family: $accent;
+  font-size: 1.5rem;
+  color: $primary;
+  font-weight: 700;
+}
+
+.nav {
+  position: relative;
+}
+
+.user {
+  width: auto;
+  height: auto;
+  p{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.125rem 0.125rem 0 0;
+  }
+  img:hover,
+  img:focus {
+    cursor: pointer;
+  }
+}
