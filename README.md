@@ -1,4 +1,4 @@
-# sayem-nextjs-vercel Frontend
+# Nextjs-NotionClone-vercel
 
   [Live Demo](https://sayem-nextjs-vercel.vercel.app/) <br />
 ## 📓 Notion Clone
@@ -37,10 +37,6 @@ Express.js · MongoDB with Mongoose · Nodemailer · JWT (Cookie-based)
 
 1. **Clone the project**
 
-   ```sh
-    git clone https://github.com/konstantinmuenster/notion-clone.git
-    cd notion-clone
-   ```
    
 2. **Add environment variables**
 
@@ -110,4 +106,4 @@ Express.js · MongoDB with Mongoose · Nodemailer · JWT (Cookie-based)
   
 ## That's all!
 
-## Thanks.
+## Thanks. @DarkHorseCoder

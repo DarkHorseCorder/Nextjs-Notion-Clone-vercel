@@ -9,7 +9,6 @@
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build"
   },
-  "author": "Konstantin Münster",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
